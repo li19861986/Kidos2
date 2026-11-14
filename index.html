@@ -200,6 +200,17 @@ footer{position:relative;z-index:1;text-align:center;padding:34px 18px 40px;marg
 footer .site{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--pink),#b81570);color:#fff;
   font-weight:900;font-size:18px;padding:12px 26px;border-radius:999px;text-decoration:none;font-family:'Rubik','Heebo',sans-serif;box-shadow:0 10px 24px rgba(233,30,140,.45)}
 footer .disc{color:var(--muted);font-size:12.5px;margin-top:16px;font-weight:600}
+/* mega package */
+.card.mega{grid-column:1/-1;border:3px solid var(--gold);box-shadow:0 0 0 5px rgba(255,215,0,.25),0 22px 50px rgba(8,15,60,.28)}
+.card.mega .top{padding:22px 22px 34px}
+.card.mega .pkgname{font-size:30px}
+.mega-badge{display:inline-block;background:var(--gold);color:#080F3C;font-weight:900;font-size:13px;padding:5px 12px;border-radius:999px;margin-bottom:8px;position:relative;z-index:1}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px 22px;padding:6px 20px 4px}
+.mgroup ul{padding:0;margin:0}
+.mcat{font-family:'Rubik','Heebo',sans-serif;font-weight:800;font-size:16px;color:var(--navy);padding:10px 0 2px;border-bottom:2px solid #f0f2fa}
+.mnone{margin:10px 20px 0;background:#eefbe3;color:#2f5f06;font-weight:800;font-size:14px;text-align:center;padding:10px 12px;border-radius:12px;line-height:1.45}
+@media(max-width:900px){.mgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.mgrid{grid-template-columns:1fr}.card.mega .pkgname{font-size:26px}}
 </style>
 </head>
 <body>
@@ -365,6 +376,62 @@ footer .disc{color:var(--muted);font-size:12.5px;margin-top:16px;font-weight:600
       </ul>
       <div class="perk">🎁 הטבת חבילה — חוגג נוסף ללא עלות!</div>
       <button class="pick" type="button" data-pkg="הכל כלול" data-price="3200" aria-pressed="false">בחרתי בחבילה זו</button>
+    </article>
+    <article class="card mega">
+      <div class="top" style="background:linear-gradient(135deg,#080F3C,#243081 45%,#E91E8C)">
+        <div class="price">5000<small> ₪</small></div>
+        <div class="mega-badge">🎪 החבילה הכי גדולה שלנו</div>
+        <div class="pkgname">קידוס מגה פסטיבל</div>
+        <div class="tag">אתם רק מגיעים, אנחנו מביאים הכל!</div>
+      </div>
+      <div class="mgrid">
+        <div class="mgroup">
+          <div class="mcat">🎭 בידור</div>
+          <ul>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>הפעלה לבחירה</li>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>2 בובות ענק לבחירה</li>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>מכונת עשן ולדים או מכונת בועות</li>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>טקס עוגה מלהיב</li>
+          </ul>
+        </div>
+        <div class="mgroup">
+          <div class="mcat">🎨 תפאורה</div>
+          <ul>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>תפאורת קונספט מלאה: קשת מתנפחת, רקע צילום, שטיח תואם ו-3 במות</li>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>מייצג דמות או עוגת מייצג לבחירה</li>
+          </ul>
+        </div>
+        <div class="mgroup">
+          <div class="mcat">🍔 אוכל</div>
+          <ul>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>דוכן הגשה משולב: שניצלונים וצ'יפס + נקניקיות וצ'יפס · 60 מנות</li>
+          </ul>
+        </div>
+        <div class="mgroup">
+          <div class="mcat">🍭 מתוקים</div>
+          <ul>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>דוכן אוטובוס מתנפח או דוכן יריד עם מכונת סוכר ופופקורן ללא הגבלה</li>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>בר ממתקים וחטיפים בדוכן מעוצב · 8 סוגים</li>
+          </ul>
+        </div>
+        <div class="mgroup">
+          <div class="mcat">🥤 שתייה</div>
+          <ul>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>2 דיספנסרים שתייה קרה</li>
+          </ul>
+        </div>
+        <div class="mgroup">
+          <div class="mcat">✉️ שירות</div>
+          <ul>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>הזמנה דיגיטלית מעוצבת</li>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>מתאים עד 50 משתתפים</li>
+          <li><span class="chk" style="background:var(--gold);color:#080F3C">✓</span>זמן חבילה: שעתיים</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mnone">✅ לא צריך להזמין קייטרינג, לקנות ממתקים, להביא שתייה או לסדר תפאורה — אנחנו דואגים להכל.</div>
+      <div class="perk">🎁 הטבת חבילה — 2 חוגגים נוספים ללא עלות!</div>
+      <button class="pick" type="button" data-pkg="קידוס מגה פסטיבל" data-price="5000" aria-pressed="false">בחרתי בחבילה זו</button>
     </article>
 
   </div>
